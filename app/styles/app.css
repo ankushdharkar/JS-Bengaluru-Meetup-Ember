@@ -1,0 +1,24 @@
+@import 'pod-styles.css';
+
+body { 
+
+	background-color: pink;
+	font-size: 40px;
+
+ }
+
+
+.my-name { 
+	color: white;
+}
+
+.btn {
+	width: 180px;
+	height: 80px;
+	font-size: 30px;
+	border-radius: 10px;
+	border-width: 2px;
+	background-color: #FF7043;
+}
+
+

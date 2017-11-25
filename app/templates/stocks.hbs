@@ -1,0 +1,38 @@
+
+<button class="btn" {{action "addMoreMoney"}}> Add Money </button>
+
+
+<br>
+
+{{#if isNoMoney}}
+	Insufficient Funds!
+{{else}}
+	How much money do I have: 
+	{{myMoney}}
+{{/if}}
+
+<br><br><br><br><br><br><br><br><br>
+
+
+{{stock-manager
+	stockName="Apple"
+	stockPrice=10000
+	availableMoney=myMoney
+	errCase=(action "handleInErr")
+}}
+
+
+{{stock-manager
+	stockName="Microsoft"
+	stockPrice=777
+	availableMoney=myMoney
+	errCase=(action "handleInErr")
+}}
+
+
+{{stock-manager
+	stockName="Facebook"
+	stockPrice=200
+	availableMoney=myMoney
+	errCase=(action "handleInErr")
+}}
