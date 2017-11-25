@@ -1,7 +1,24 @@
 # sample-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Simple app used to demonstrate how to use Ember
+
+## IMPORTANT:
+
+To use **pods** in your project:
+
+* Enable pods in `enviroment.js` by putting ```podModulePrefix: '<app-name>/pods'```, like [here](https://github.com/ankushdharkar/JS-Bengaluru-Meetup-Ember/blob/3dbddb5a71b804e82a0e74335bf6e2ab74a192da/config/environment.js#L7)
+
+* Create a `pods` folder manually in your `app` folder ,like [here](https://github.com/ankushdharkar/JS-Bengaluru-Meetup-Ember/tree/3dbddb5a71b804e82a0e74335bf6e2ab74a192da/app/pods)
+
+* Install `ember-component-css` addon from terminal by running:
+	```ember install ember-component-css```
+
+* Include in `app.css`, line ```@import 'pod-styles.css';``` [here](https://github.com/ankushdharkar/JS-Bengaluru-Meetup-Ember/blob/3dbddb5a71b804e82a0e74335bf6e2ab74a192da/app/styles/app.css#L1)
+
+* Now, for _EVERY_ component you generate, add the `--pod` flag:
+	```ember g component <comp-name> --pod```
+
+**_Sidenote_**: _There is a way where the pod becomes default by putting in a config file, but not mentioned at the demo_
 
 ## Prerequisites
 
