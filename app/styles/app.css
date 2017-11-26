@@ -21,4 +21,6 @@ body {
 	background-color: #FF7043;
 }
 
-
+.btn.btn-sell {
+    background-color: brown;
+}
