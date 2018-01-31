@@ -2,6 +2,8 @@
 
 Simple app used to demonstrate how to use Ember
 
+Webinar for this : [YouTube link](https://youtu.be/I_yQR5GNReY)
+
 ## IMPORTANT:
 
 To use **pods** in your project:
