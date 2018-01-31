@@ -16,6 +16,15 @@ export default Component.extend({
 			else{
 				this.get('errCase')();
 			}
+		},
+
+		sellStock() {
+			if(this.get('numStocks') > 0) {
+				this.set('numStocks', this.get('numStocks') - 1);
+				this.set('availableMoney', this.get('availableMoney') + this.get('stockPrice'));
+			} else {
+				this.get('errCase')();
+			}
 		}
 	}
 });
